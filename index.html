@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="dbg text-white d-flex justify-content-between py-2 px-3">
+
+            <div class="d-inline">
+                <a href="#"><img src="https://himelbikon.pythonanywhere.com/static/images/logo1.png" alt=""></a>
+            </div>
+
+
+            <div class="d-inline-block m-0 p-0">
+                <ul class="d-flex mx-3 ls-none main-menu my-0 p-0">
+                    <li class="p-3 d-flex justify-content-end">
+                        <button class="btn mobile text-white" onclick="menuHandler()">
+                            <i class="far fa-window-close"></i>
+                        </button>
+                    </li>
+                    <li class="p-3"> <a href="#"> Home </a></li>
+                    <li class="p-3">
+                        <a href="#"> About us </a>
+                        <div class="sub-menu-1 text-center my-2 px-2">
+                            <ul class="ls-none m-0 p-0">
+                                <li class="m-2 border-bottom py-2"> <a href="#">category</a> </li>
+                                <li class="m-2 border-bottom py-2"> <a href="#">category most</a> </li>
+                                <li class="m-2 border-bottom py-2"><a href="#"> category</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-3"> <a href="#"> Contact </a></li>
+                    <li class="p-3"> <a href="#"> Dashboard </a></li>
+                    <li class="p-3">
+                        Services
+                        <div class="sub-menu-1 text-center my-2 px-2 py-3 shadow">
+                            <ul class="ls-none m-0 p-0">
+                                <li class=""> <a href="#">category</a> </li>
+                                <hr />
+                                <li class=""> <a href="#">category most</a> </li>
+                                <hr />
+                                <li class=""><a href="#"> category</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-3"> <a href="#"> Login </a></li>
+                    <li class="p-3"> <a href="#"> Logout </a></li>
+                    <li class="p-3"> <a href="#"> Contact </a></li>
+
+
+                </ul>
+            </div>
+
+            <button class="btn mobile text-white" onclick="menuHandler()"><i class="fas fa-bars"></i></button>
+
+        </nav>
+    </header>
+
+
+
+
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- custom -->
+    <script src="main.js"></script>
+</body>
+
+</html>

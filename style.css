@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap");
+:root {
+  --dbg: #3cd3ad;
+}
+
+* {
+  font-family: "Yuji Syuku", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--dbg);
+}
+
+.dbg {
+  background: var(--dbg);
+}
+
+.dc {
+  color: var(--dbg);
+}
+
+.mobile {
+  display: none;
+}
+
+/* navbar */
+
+nav a:hover {
+  color: #0d6efd;
+}
+
+.ls-none {
+  list-style: none;
+}
+
+.sub-menu-1 {
+  display: none;
+  position: absolute;
+  background: var(--dbg);
+}
+
+.main-menu li:hover .sub-menu-1,
+.sub-menu-1:hover {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .mobile {
+    display: block;
+  }
+
+  /* navbar */
+  .main-menu {
+    background: var(--dbg);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0 0 0;
+    width: 350px;
+    height: 100vh;
+    top: 0;
+    right: -370px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+}
